@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* all common css start */
+:root {
+    --white: #ffffff;
+    --Black: #000000;
+    --Whtite-ee: #EEEEEE;
+    --gray19: #191919;
+    --dark: #0D0D0D;
+    --Inter:"Inter", sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  var(--Inter);
+}
+body {
+    background: var(--dark);
+    color: var(--white);
+    line-height: 1.6;
+}
+ul, ol, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+.common_btn {
+    display: inline-block;
+    padding: 20px 54px;
+    border-radius: 10px;
+    background: var(--white);
+    color: var(--Black);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    border-radius: 1000px;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.section_heading {
+    padding-bottom: 40px;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 820px;
+    line-height: 70px;
+    margin: 0 auto;
+}
+.section_heading h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+    padding-bottom: 10px;
+    text-align: center;
+    color: var(--white);
+}
+.section_heading p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--white);
+}
+
+/* all common css end */
+
+/* nav css start */
+nav {
+    background: var(--Black);
+    padding: 15px 0;
+    position: static;
+}
+.main_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+.main_menu .logo {
+    width: 100px;
+}
+.main_menu .logo img {
+    height: 100px;
+}
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.menu ul li {}
+.menu ul li a {
+    padding: 10px 20px;
+    border-radius: 19px;
+    color: var(--white)
+}
+.menu ul li a:hover {
+     border-bottom: 3px solid var(--white);
+     padding: 10px 20px;
+     border-radius: 19px;
+     color: rgb(242, 242, 242);
+    
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.buttons button {
+    background: transparent;
+    border: none;
+}
+.buttons button:hover {
+    box-shadow:0px 0px 20px 8px #4f4f4f7d;
+   color:  darksalmon;
+    border-radius: 16px;
+    cursor: pointer;
+}
+/* nav css end */
+
+/* banner section start */
+#banner {
+    background: url(../css/images/bg\ image.jpg) no-repeat center/cover;
+}
+#banner .overlay {
+    padding-top: 72px;
+    padding-bottom: 246px;
+    height: 818px;
+background: linear-gradient(-270deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 39.51%, rgba(0, 0, 0, 0) 60.42%, rgba(0, 0, 0, 0) 100%);
+}
+.banner_info {
+    max-width: 652px;
+}
+.banner_info h1 {
+    font-size: 66px;
+    line-height: 1.5;
+    font-weight: 900;
+    color: var(--white);
+}
+.banner_info h1 span {
+    display: block;
+}
+.banner_info p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--white);
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-right: 87px;
+}
+.banner_info a {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--Black);
+    background: var(--white);
+    border-radius: 1000px;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+.banner_info a:hover {
+    background-color: darkgoldenrod;
+    color: var(--white);
+}
+/* banner section end */
+#food_maker {
+    padding: 70px 0;
+}
+
+.food_maker_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 87px;
+}
+.food_maker_container .video {
+    min-height: 430px;
+    background: url(../css/images/video-bg.jpg) no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+/* food maker section start */
+.food_maker_container .video .images {}
+.food_maker_container .video .images  button {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.food_maker_container .video .images  button:hover {
+    box-shadow:0px 0px 20px 8px darksalmon;
+}
+.food_maker_container p {
+    line-height: 30px;
+    font-size: 18px;
+    color: var(--Whtite-ee);
+}
+.food_maker_container p a {
+    font-weight: 700px;
+    color: #9d4444; 
+}
+/* food maker section End */
+
+/* Menu section start */
+.delicious_menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+.section_heading1 {
+    display: block;
+    font-size: 30px;
+    width: 770px;
+    font-weight: bold;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.delicious_menu li a {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    border-bottom: 3px solid transparent;
+    transition: al cubic-bezier(0.83, -0.24, 0.06) 1s;
+}
+.delicious_menu li a:hover {
+    border-bottom: 3px solid var(--white);
+}
+/* Menu section start */
+
+/* Food Items style start */
+
+.menu_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+.menu_items .item {
+    padding: 20px;
+    background: var(--gray19);
+    border-radius: 20px;
+    
+}
+  
+.menu_items .item .item_image  {
+height: 236px;
+display: flex;
+align-items: center;
+justify-content: center;
+    
+}
+.menu_items .item .item_image img {
+    width: 100%;
+}
+.menu_items .item .item_info {
+
+}
+.menu_items .item .item_info .title {
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+color: var(--white);
+}
+.menu_items .item .item_info .description {
+padding: 10px 0;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+color: var(--white);
+}
+.menu_items .item .item_info .price_and_cart {
+display: flex;
+justify-content: space-between;
+gap: 20px;
+align-items: center;
+}
+.menu_items .item .item_info .price_and_cart .price {
+color: var(--white);
+font-size: 18px;
+font-weight: 700;
+}
+.menu_items .item .item_info .price_and_cart .cart { 
+height: 40px;
+width: 40px;
+border-radius: 50%;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid var(--white);
+cursor: pointer;
+}
+.see_all {
+display: flex;
+justify-content: center;
+padding-top: 80px;
+}
+.see_all a {
+display: inline-block;
+padding: 20px 54px;
+border-radius: 1000px;
+background: var(--white);
+color: var(--Black);
+font-size: 18px;
+font-weight: 600;
+line-height: 1.5;
+}
+.see_all a:hover {
+    background-color: rgb(184, 134, 11);
+    color: var(--white);
+}
+/* Food Items style End */
+
+/* quality_food style Start */
+
+#quality_food {
+    padding-top: 80px;
+}
+.quality_food {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.quality_food .item {
+    text-align: center;
+}
+.quality_food .item h4 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.quality_food .item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* quality_food style End*/
+
+/*  franchisee style Start*/
+
+#franchisee {
+    padding: 150px;
+}
+.franchisee_info {
+    text-align: center;
+}
+.franchisee_info p {
+    padding-bottom: 50px;
+}
+.franchisee_info a:hover {
+    background-color: rgb(184, 134, 11);
+    color: var(--white);
+}/*  franchisee style End*/
+
+/* Testimonial start  */
+#testimonial {
+    padding-top: 0;
+    padding-bottom: 150px;
+
+}
+#testimonial h2 {
+    padding-bottom: 70px;
+}
+.testimonial_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.testimonial_item {
+    padding: 30px;
+    background: #191919 ;
+    border-radius: 16px;
+}
+.testimonial_item .top {
+    display: grid;
+    grid-template-columns: 74px 1fr;
+    gap: 12px;
+}
+.testimonial_item .top .user {
+    
+}
+.testimonial_item .top .user .avater {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9d4444;
+    overflow: hidden; 
+}
+.testimonial_item .top .user .avater img {
+    width: 100%;
+}
+.testimonial_item .quote {
+    margin-top: 20px;
+    position: relative;
+}
+.testimonial_item .quote::after {
+    content: "";
+    width: 195px;
+    height: 1px;
+    background: var(--white);
+    opacity: 20%;
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.testimonial_item .top .user_info ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.testimonial_item .top .user_info ul li {
+    width: 12px;
+    height: 12px;
+    
+}
+.testimonial_item .top .user_info ul li img {
+    width: 100%;
+}
+.testimonial_item .bottom {
+    padding-top: 30px;
+}
+.testimonial_item .bottom p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--white);
+}
+/* Testimonial End  */
+
+/* subscribe style Start */
+#subscribe {
+    padding: 80px 0;
+    background: var(--white);
+    color: var(--Black);
+    
+}
+.subscribe_box h2{
+    font-size: 70px;
+    line-height: 90px;
+    color: #000; 
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;
+    
+}
+.subscribe_box form{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    max-width: 748px;
+    margin: 0 auto;
+}
+.subscribe_box form input{
+    border: 1px solid #000000;
+    padding: 20px 30px;
+    border-radius: 1000px;
+    background: transparent;
+    color: #000000;
+}
+.subscribe_box form input::placeholder {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--black)
+}
+.subscribe_box form button{
+    border: none;
+    padding: 20px 54px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 1000px;
+    background: #000000;
+    line-height: 1.5;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+.subscribe_box form button:hover {
+    box-shadow:0px 0px 20px 8px #4f4f4f7d;
+    color: darksalmon;
+}
+/* subscribe style End */
+
+/* Location style Start */
+#location {
+    padding: 150px 0;
+    background: #000000;
+    
+}
+.location_container {
+    display: grid;
+    grid-template-columns: 1fr 483px;
+    gap: 145px;
+    align-items: center;
+}
+.location_container .text h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #ffffff;
+}
+.location_container .text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    padding-top: 16px;
+    padding-bottom: 70px;
+}
+.location_container .text button {
+    border: none;
+    padding: 20px 54px;
+    border-radius: 1000px;
+    background: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+.location_container .text button:hover {
+    background-color: rgb(184, 134, 11);
+    color: var(--white);
+}
+/* Location style End */
+
+/* footer style start */
+#footer {
+    padding: 80px 0;
+    background: #191919;
+    
+}
+.fotter_grid {
+    display: flex;
+    gap: 103px;
+    justify-content: space-between;
+}
+.fotter_grid h5 {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.fotter_grid ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+.fotter_grid ul li a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.footer_container .copy {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+.footer_container .copy ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* footer style End */
